@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoSound</title>
+    <title>AppleToolet</title>
     <style>
         body {
             display: flex;
@@ -173,7 +173,7 @@
 
     <div class="modal-overlay" id="channelsModal">
         <div class="modal-content">
-            <h2 class="modal-title">Наши Telegram каналы</h2>
+            <h2 class="modal-title">Мои тгкашки</h2>
             <div class="channels-grid"></div>
         </div>
     </div>
@@ -185,16 +185,16 @@
         const channelsGrid = document.querySelector('.channels-grid');
         
         const channels = [
-            'https://t.me/m5stick_loni2',
-            'https://t.me/+QFjtYcgb7J9jYTJi'
+            'https://t.me/detektik_chn',
+            'https://t.me/krutoi_musik'
         ];
         
 
         function createChannelButtons() {
             channelsGrid.innerHTML = channels.map(channel => {
                 let channelName = channel.replace('https://t.me/', '');
-                if (channelName === "+QFjtYcgb7J9jYTJi"){
-                channelName = "Палка 2.0";
+                if (channelName === "krutoi_musik"){
+                channelName = "Крутой мьюзик";
                 }
                 return `
                     <a href="${channel}" class="channel-button" target="_blank">
